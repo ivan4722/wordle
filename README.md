@@ -38,27 +38,29 @@ We can count the freuqency of each letter in each of the past 997 wordle words (
 A 8.9869%
 B 2.3671%
 C 4.2528%
-K 1.9458%
-S 5.2156%
-E 10.7924%
-T 6.8004%
-Y 3.2297%
-O 6.8405%
-U 3.7914%
-V 1.1434%
-R 7.9639%
-I 5.5767%
 D 3.1294%
-P 3.1093%
-M 2.6480%
-L 6.0983%
+E 10.7924%
 F 1.8656%
 G 2.8686%
-N 4.8546%
-W 1.5446%
 H 3.7312%
-X 0.3811%
-Z 0.3811%
+I 5.5767%
 J 0.2006%
+K 1.9458%
+L 6.0983%
+M 2.6480%
+N 4.8546%
+O 6.8405%
+P 3.1093%
 Q 0.2808%
+R 7.9639%
+S 5.2156%
+T 6.8004%
+U 3.7914%
+V 1.1434%
+W 1.5446%
+X 0.3811%
+Y 3.2297%
+Z 0.3811%
 ```
+Lets put it side by side. Green color = greater percentage
+!(excel)[https://i.imgur.com/qkFTRSZ.png]
