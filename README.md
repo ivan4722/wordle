@@ -68,10 +68,10 @@ We can see the numbers are relatively similar by examination, but lets see how s
 Pearson Correlation Coefficient: 0.9733621073220139
 P-value: 7.35520736230258e-17
 ```
-As we can see by the very high Pearson correlation coefficient of >0.5 denoting positive relationship, and 0.97... denotes a very strong positive relationship. (with frequency of letters of all words on y axis and frequency of letters of wordle words on x axis).
+As we can see by the very high Pearson correlation coefficient of $>0.5$ denoting positive relationship, and $0.97...$ denotes a very strong positive relationship. (with frequency of letters of all words on y axis and frequency of letters of wordle words on x axis).
 
 **Based on the strong correlation, what does that tell us in terms of how wordle selects their words?**\
-Based on the Pearson correlation coefficient of 0.9733621073220139 and P-value of 7.35520736230258e-17, we can deduce that the correlation is not due to random chance. Based on the statistical analysis, I believe the wordle word selection is not biased and systemically similar to that of the total English language. More generally, Wordle's word selection is relatively representative of the letter distribution across the total English language. 
+Based on the Pearson correlation coefficient of $0.9733621073220139$ and P-value of $7.35520736230258e-17$, we can deduce that the correlation is not due to random chance. Based on the statistical analysis, I believe the wordle word selection is not biased and systemically similar to that of the total English language. More generally, Wordle's word selection is relatively representative of the letter distribution across the total English language. 
 
 # 2. Game Theory Optimal (GTO) Wordle
-All words contain one vowel. According to the Wordle analysis bot, thhe optimal guess is "adieu" to guess 4/5 of the vowels. $x$
+All words contain one vowel. According to the Wordle analysis bot, thhe optimal guess is "adieu" to guess $4/5$ of the vowels. 
