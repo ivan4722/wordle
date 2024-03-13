@@ -62,8 +62,7 @@ X 0.3811%
 Y 3.2297%
 Z 0.3811%
 ```
-Lets put it side by side. Green color = greater percentage\
-![excel](https://i.imgur.com/qkFTRSZ.png)\
+
 We can see the numbers are relatively similar by examination, but lets see how similar they are by calculating the pearson correlation coefficient. Because we have two continuous variables, we can examine the statistical significance by measuring the association between the two variables. We can also calculate the p-value to further support the statistical significance.
 ```
 Pearson Correlation Coefficient: 0.9733621073220139
