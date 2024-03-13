@@ -63,10 +63,13 @@ Y 3.2297%
 Z 0.3811%
 ```
 Lets put it side by side. Green color = greater percentage\
-![excel](https://i.imgur.com/qkFTRSZ.png)
+![excel](https://i.imgur.com/qkFTRSZ.png)\
 We can see the numbers are relatively similar by examination, but lets see how similar they are by calculating the pearson correlation coefficient. Because we have two continuous variables, we can examine the statistical significance by measuring the association between the two variables. We can also calculate the p-value to further support the statistical significance.
 ```
 Pearson Correlation Coefficient: 0.9733621073220139
 P-value: 7.35520736230258e-17
 ```
 As we can see by the very high Pearson correlation coefficient of >0.5 denoting positive relationship, and 0.97... denotes a very strong positive relationship. (with frequency of letters of all words on y axis and frequency of letters of wordle words on x axis).
+
+**Based on the strong correlation, what does that tell us in terms of how wordle selects their words?**
+Based on the Pearson correlation coefficient of 0.9733621073220139 and P-value of 7.35520736230258e-17, we can deduce that the correlation is not due to random chance. Based on the statistical analysis, I believe the wordle word selection is not biased and systemically similar to that of the total English language. More generally, Wordle's word selection is relatively representatitve of the letter distribution across the total English language. 
