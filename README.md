@@ -2,7 +2,7 @@
 Is wordle word selection truly random or is it biased?
 ![graph](https://i.imgur.com/h1HDE3A.png)
 
-# 1. Are any letters used more in the wordle words than across all 5 words in the English dictionary?
+# 1. Are any letters used more in the wordle words than across all words in the English dictionary?
 Per this source: https://www3.nd.edu/~busiforc/handouts/cryptography/letterfrequencies.html
 We can see the percentage of all letters for each letter respective is as follows:
 ```
