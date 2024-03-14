@@ -73,7 +73,7 @@ As we can see by the very high Pearson correlation coefficient of $>0.5$ denotin
 **Based on the strong correlation, what does that tell us in terms of how wordle selects their words?**\
 Based on the Pearson correlation coefficient of $0.9733621073220139$ and P-value of $7.35520736230258e-17$, we can deduce that the correlation is not due to random chance. Based on the statistical analysis, I believe the wordle word selection is not biased and systemically similar to that of the total English language. More generally, Wordle's word selection is relatively representative of the letter distribution across the total English language. 
 
-# 2. Game Theory Optimal (GTO) Wordle
+# 2. Game Theory Optimal (GTO) Wordle (part 1: analysis of "adieu")
 All words contain one vowel. According to the Wordle analysis bot, the optimal guess is "adieu" to guess $4/5$ of the vowels. \
 Lets see why that is. \
 What is the probability with the guess "adieu" that we hit at least one vowel?\
@@ -127,3 +127,6 @@ This evaluates to $0.91574724172$.\
 **What does this tell us?** \
 Well, this data does not tell us anything regarding the green and yellow squares (denoting correct index of the letter). \
 However, it does tell us that with $\approx91.57$%, any word in the experimental 997 past words will have the letters a e i or u. As a result, the guess "adieu" will have a "hit" with $91.57$% of words. (realistically it is higher if you consider the "d" letter, but for the sake of the argument we used only the vowels.)
+
+# 3. Game Theory Optimal (GTO) Wordle (part 2: comparison to random guessing)
+There are $26^5$ total 5 letter "words". There are not actually this many 5 letter words, but there are $26^5$ permutations of letter arrangements of length 5. 
