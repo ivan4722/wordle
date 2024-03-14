@@ -126,4 +126,4 @@ $-0.10732196589769308-0.05315947843530592-0.024072216649949848+0.011033099297893
 This evaluates to $0.91574724172$.
 **What does this tell us?** \
 Well, this data does not tell us anything regarding the green and yellow squares (denoting correct index of the letter). \
-However, it does tell us that with $\approx91.57%$, any word in the experimental 997 past words will have the letters a e i or u. As a result, the guess "adieu" will have a "hit" with 91.57% of words. (realistically it is higher if you consider the "d" letter, but for the sake of the argument we used only the vowels.)
+However, it does tell us that with $\approx91.57$%, any word in the experimental 997 past words will have the letters a e i or u. As a result, the guess "adieu" will have a "hit" with $91.57$% of words. (realistically it is higher if you consider the "d" letter, but for the sake of the argument we used only the vowels.)
