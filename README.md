@@ -78,6 +78,6 @@ All words contain one vowel. According to the Wordle analysis bot, the optimal g
 Lets see why that is. \
 What is the probability with the guess "adieu" that we hit at least one vowel?\
 First, lets consider that the probability that a word has the letter $\alpha_1$ is not mutually exclusive to $\alpha_2$, $\alpha_i$ denoting any letter.\
-$P(\text{at least one vowel guessed by "adieu"}) = P (A U B U C U D)$ \
+$P(\text{at least one vowel guessed by "adieu"}) = P (A ∪ B ∪ C ∪ D)$ \
 $= P(A) + P(B) + P(C) +P(D) - P(A ∩ B) - P(A ∩ C) - P(A ∩ D)- P(B ∩ C) - P(B ∩ D) - P(C ∩ D) + P(A ∩ B ∩ C) + P(A ∩ B ∩ D) + P(A ∩ C ∩ D) + P(B ∩ C ∩ D) - P(A ∩ B ∩ C ∩ D) $
 There are some words that have no vowels and have a "y" in place (ex: cysts), but they are a small subset of the total words so for simplicity we will ignore them.\
