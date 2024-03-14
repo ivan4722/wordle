@@ -74,9 +74,9 @@ As we can see by the very high Pearson correlation coefficient of $>0.5$ denotin
 Based on the Pearson correlation coefficient of $0.9733621073220139$ and P-value of $7.35520736230258e-17$, we can deduce that the correlation is not due to random chance. Based on the statistical analysis, I believe the wordle word selection is not biased and systemically similar to that of the total English language. More generally, Wordle's word selection is relatively representative of the letter distribution across the total English language. 
 
 # 2. Game Theory Optimal (GTO) Wordle
-All words contain one vowel. According to the Wordle analysis bot, thhe optimal guess is "adieu" to guess $4/5$ of the vowels. 
-Lets see why that is. 
-What is the probability with the guess "adieu" that we hit at least one vowel?
-First, lets consider that the probability that a word has the letter $\alpha_1$ is not mutually exclusive to $\alpha_2$, $\alpha_i$ denoting any letter.
-$P(\text{at least one vowel guessed by "adieu"}) = P(A) + P(E) + P(I) + P(U) 
-There are some words that have no vowels and have a "y" in place (ex: cysts), but they are a small subset of the total words so for simplicity we will ignore them.
+All words contain one vowel. According to the Wordle analysis bot, thhe optimal guess is "adieu" to guess $4/5$ of the vowels. \
+Lets see why that is. \
+What is the probability with the guess "adieu" that we hit at least one vowel?\
+First, lets consider that the probability that a word has the letter $\alpha_1$ is not mutually exclusive to $\alpha_2$, $\alpha_i$ denoting any letter.\
+$P(\text{at least one vowel guessed by "adieu"}) = P (A U B U C U D) = P(A) + P(B) + P(C) +P(D) - P(A ∩ B) - P(A ∩ C) - P(A ∩ D)- P(B ∩ C) - P(B ∩ D) - P(C ∩ D) + P(A ∩ B ∩ C) + P(A ∩ B ∩ D) + P(A ∩ C ∩ D) + P(B ∩ C ∩ D) - P(A ∩ B ∩ C ∩ D) $
+There are some words that have no vowels and have a "y" in place (ex: cysts), but they are a small subset of the total words so for simplicity we will ignore them.\
