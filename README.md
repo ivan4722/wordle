@@ -77,5 +77,6 @@ Based on the Pearson correlation coefficient of $0.9733621073220139$ and P-value
 All words contain one vowel. According to the Wordle analysis bot, thhe optimal guess is "adieu" to guess $4/5$ of the vowels. 
 Lets see why that is. 
 What is the probability with the guess "adieu" that we hit at least one vowel?
-$P(\text{at least one vowel guessed by "adieu"}) = P(A) + P(E) + P(I) + P(U) = 1 - P(O)$\
+First, lets consider that the probability that a word has the letter $\alpha_1$ is not mutually exclusive to $\alpha_2$, $\alpha_i$ denoting any letter.
+$P(\text{at least one vowel guessed by "adieu"}) = P(A) + P(E) + P(I) + P(U) 
 There are some words that have no vowels and have a "y" in place (ex: cysts), but they are a small subset of the total words so for simplicity we will ignore them.
