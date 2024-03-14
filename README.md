@@ -124,3 +124,6 @@ $= P(A) + P(E) + P(I) +P(U) - P(A ∩ E) - P(A ∩ I) - P(A ∩ U)- P(E ∩ I) -
 $=0.41424272818455365+0.4754262788365095+0.2708124373119358+0.1855566700100301-0.17352056168505517-0.0641925777331996-0.037111334002006016$\
 $-0.10732196589769308-0.05315947843530592-0.024072216649949848+0.011033099297893681+0.010030090270812437+0.0020060180541624875+0.006018054162487462-0$\
 This evaluates to $0.91574724172$.
+**What does this tell us?** \
+Well, this data does not tell us anything regarding the green and yellow squares (denoting correct index of the letter). \
+However, it does tell us that with $\approx91.57%$, any word in the experimental 997 past words will have the letters a e i or u. As a result, the guess "adieu" will have a "hit" with 91.57% of words. (realistically it is higher if you consider the "d" letter, but for the sake of the argument we used only the vowels.)
