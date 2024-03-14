@@ -80,4 +80,46 @@ What is the probability with the guess "adieu" that we hit at least one vowel?\
 First, lets consider that the probability that a word has the letter $\alpha_1$ is not mutually exclusive to $\alpha_2$, $\alpha_i$ denoting any letter.\
 $P(\text{at least one vowel guessed by "adieu"}) = P (A ∪ E ∪ I ∪ U)$ \
 $= P(A) + P(E) + P(I) +P(U) - P(A ∩ E) - P(A ∩ I) - P(A ∩ U)- P(E ∩ I) - P(E ∩ U) - P(I ∩ U) + P(A ∩ E ∩ I) + P(A ∩ E ∩ U) + P(A ∩ I ∩ U) + P(E ∩ I ∩ U) - P(A ∩ E ∩ I ∩ U) $\
-There are some words that have no vowels and have a "y" in place (ex: cysts), but they are a small subset of the total words so for simplicity we will ignore them.
+There are some words that have no vowels and have a "y" in place (ex: cysts), but they are a small subset of the total words so for simplicity we will ignore them.\
+Below is the count of each word that has the following letters:\
+```
+A: 413
+E: 474
+I: 270
+O: 308
+U: 185
+A ∩ E:  173
+A ∩ I:  64
+A ∩ U:  37
+E ∩ I:  107
+E ∩ U:  53
+I ∩ U:  24
+A ∩ E ∩ I:  11
+A ∩ E ∩ U:  10
+A ∩ I ∩ U:  2
+E ∩ I ∩ U:  6
+A ∩ E ∩ I ∩ U:  0
+```
+We can then calculate the probability by dividing by the total amount of words (997).\
+```
+A: 0.41424272818455365
+E: 0.4754262788365095
+I: 0.2708124373119358
+U: 0.1855566700100301
+A ∩ E:  0.17352056168505517
+A ∩ I:  0.0641925777331996
+A ∩ U:  0.037111334002006016
+E ∩ I:  0.10732196589769308
+E ∩ U:  0.05315947843530592
+I ∩ U:  0.024072216649949848
+A ∩ E ∩ I:  0.011033099297893681
+A ∩ E ∩ U:  0.010030090270812437
+A ∩ I ∩ U:  0.0020060180541624875
+E ∩ I ∩ U:  0.006018054162487462
+A ∩ E ∩ I ∩ U:  0.0
+```
+Then, we can now compute the probability: \
+$P(\text{at least one vowel guessed by "adieu"}) = P (A ∪ E ∪ I ∪ U)$ \
+$= P(A) + P(E) + P(I) +P(U) - P(A ∩ E) - P(A ∩ I) - P(A ∩ U)- P(E ∩ I) - P(E ∩ U) - P(I ∩ U) + P(A ∩ E ∩ I) + P(A ∩ E ∩ U) + P(A ∩ I ∩ U) + P(E ∩ I ∩ U) - P(A ∩ E ∩ I ∩ U) $\
+$ = 0.41424272818455365+0.4754262788365095+0.2708124373119358+0.1855566700100301-0.17352056168505517-0.0641925777331996-0.037111334002006016-0.10732196589769308-0.05315947843530592-0.024072216649949848+0.011033099297893681+0.010030090270812437+0.0020060180541624875+0.006018054162487462-0$\
+This evaluates to $0.91574724172$.
