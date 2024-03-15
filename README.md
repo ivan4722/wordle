@@ -129,4 +129,6 @@ Well, this data does not tell us anything regarding the green and yellow squares
 However, it does tell us that with $\approx91.57$%, any word in the experimental 997 past words will have the letters a e i or u. As a result, the guess "adieu" will have a "hit" with $91.57$% of words. (realistically it is higher if you consider the "d" letter, but for the sake of the argument we used only the vowels.)
 
 # 3. Game Theory Optimal (GTO) Wordle (part 2: comparison to random guessing)
-There are $26^5$ total 5 letter "words". There are not actually this many 5 letter words, but there are $26^5$ permutations of letter arrangements of length 5. 
+There are $26^5$ total 5 letter "words". There are not actually this many 5 letter words, but there are $26^5$ permutations of letter arrangements of length 5. That means for each letter, there is a $1/26$ chance that it is guessed correctly.\
+Lets compute the probability that we guess at least 1 letter correct. \
+$P({1 correct})=1-P({none correct})$
