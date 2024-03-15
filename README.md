@@ -131,5 +131,7 @@ However, it does tell us that with $\approx91.57$%, any word in the experimental
 # 3. Game Theory Optimal (GTO) Wordle (part 2: comparison to random guessing)
 There are $26^5$ total 5 letter "words". There are not actually this many 5 letter words, but there are $26^5$ permutations of letter arrangements of length 5. That means for each letter, there is a $1/26$ chance that it is guessed correctly.\
 Lets compute the probability that we guess at least 1 letter correct. \
-$P(\text{at least one correct}) = 1 - P(\text{none correct})=1-(25/26)^5=0.17807289324\approx 17.81$%.
+$P(\text{at least one correct}) = 1 - P(\text{none correct})=1-(25\div26)^5=0.17807289324\approx 17.81$%.\
+We can see the probability of getting at least one letter of "randomly guessing" is only around 17.81%, compared to guessing "adieu" with a probability of 91.57%. 
+We can deduce from this data that "adieu" is a better-than-random guess, as supported by wordle's analysis bot as well. 
 
