@@ -73,7 +73,7 @@ As we can see by the very high Pearson correlation coefficient of $>0.5$ denotin
 **Based on the strong correlation, what does that tell us in terms of how wordle selects their words?**\
 Based on the Pearson correlation coefficient of $0.9733621073220139$ and P-value of $7.35520736230258e-17$, we can deduce that the correlation is not due to random chance. Based on the statistical analysis, I believe the wordle word selection is not biased and systemically similar to that of the total English language. More generally, Wordle's word selection is relatively representative of the letter distribution across the total English language. 
 
-# 2. Game Theory Optimal (GTO) Wordle (part 1: analysis of "adieu")
+# 2. Game Theory Optimal (GTO) Wordle: Why is "adieu" the best choice?
 All words contain one vowel. According to the Wordle analysis bot, the optimal guess is "adieu" to guess $4/5$ of the vowels. \
 Lets see why that is. \
 What is the probability with the guess "adieu" that we hit at least one vowel?\
@@ -126,9 +126,9 @@ $-0.10732196589769308-0.05315947843530592-0.024072216649949848+0.011033099297893
 This evaluates to $0.91574724172$.\
 **What does this tell us?** \
 Well, this data does not tell us anything regarding the green and yellow squares (denoting correct index of the letter). \
-However, it does tell us that with $\approx91.57$%, any word in the experimental 997 past words will have the letters a e i or u. As a result, the guess "adieu" will have a "hit" with $91.57$% of words. (realistically it is higher if you consider the "d" letter, but for the sake of the argument we used only the vowels.)
+However, it does tell us that with $\approx91.57$%, any word in the experimental 997 past words will have the letters a e i or u. As a result, the guess "adieu" will have a "hit" with $91.57$% of words. (realistically it is higher if you consider the "d" letter, but for the sake of the argument we used only the vowels.)\
 
-# 3. Game Theory Optimal (GTO) Wordle (part 2: comparison to random guessing)
+**How does this compare to random guessing?**\
 There are $26^5$ total 5 letter "words". There are not actually this many 5 letter words, but there are $26^5$ permutations of letter arrangements of length 5. That means for each letter, there is a $1/26$ chance that it is guessed correctly.\
 Lets compute the probability that we guess at least 1 letter correct. \
 $P(\text{at least one correct}) = 1 - P(\text{none correct})=1-(25\div26)^5=0.17807289324\approx 17.81$%.\
