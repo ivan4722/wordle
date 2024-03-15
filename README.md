@@ -100,7 +100,7 @@ A ∩ I ∩ U:  2
 E ∩ I ∩ U:  6
 A ∩ E ∩ I ∩ U:  0
 ```
-We can then calculate the probability by dividing by the total amount of words (997).\
+We can then calculate the probability by dividing by the total amount of words (997).
 ```
 A: 0.41424272818455365
 E: 0.4754262788365095
