@@ -81,7 +81,7 @@ First, lets consider that the probability that a word has the letter $\alpha_1$ 
 $P(\text{at least one vowel guessed by "adieu"}) = P (A ∪ E ∪ I ∪ U)$ \
 $= P(A) + P(E) + P(I) +P(U) - P(A ∩ E) - P(A ∩ I) - P(A ∩ U)- P(E ∩ I) - P(E ∩ U) - P(I ∩ U) + P(A ∩ E ∩ I) + P(A ∩ E ∩ U) + P(A ∩ I ∩ U) + P(E ∩ I ∩ U) - P(A ∩ E ∩ I ∩ U) $\
 There are some words that have no vowels and have a "y" in place (ex: cysts), but they are a small subset of the total words so for simplicity we will ignore them.\
-Below is the count of each word that has the following letters:\
+Below is the count of each word that has the following letters:
 ```
 A: 413
 E: 474
